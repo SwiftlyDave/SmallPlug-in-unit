@@ -5,11 +5,17 @@ Small 插件化调研、学习、示例应用
 ## 工程模块
 
 [app](https://github.com/SwiftlyDave/SmallPlug-in-unit/tree/master/app) : 宿主模块
+
 [lib.style](https://github.com/SwiftlyDave/SmallPlug-in-unit/tree/master/lib.style) : styles库，包括公共的strings、colors、dimens等
+
 [lib.framework](https://github.com/SwiftlyDave/SmallPlug-in-unit/tree/master/lib.framework) : 基本框架库，包括网络请求、缓存、动态代理回调、Utils等。
+
 [app.main](https://github.com/SwiftlyDave/SmallPlug-in-unit/tree/master/app.main) : App的主模块
+
 [app.phone](https://github.com/SwiftlyDave/SmallPlug-in-unit/tree/master/app.phone) : 查询手机号码归属地模块
+
 [app.weather](https://github.com/SwiftlyDave/SmallPlug-in-unit/tree/master/app.weather) : 查询北京天气模块
+
 [app.shanghai.weather](https://github.com/SwiftlyDave/SmallPlug-in-unit/tree/master/app.shanghai.weather) : 查询上海天气模块
 
 ## 写在前面的话  
