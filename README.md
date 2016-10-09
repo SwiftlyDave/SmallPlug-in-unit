@@ -1,17 +1,3 @@
-Small 插件化调研、学习、示例应用
-
-工程模块
-
-app : 宿主模块
-lib.style : styles库，包括公共的strings、colors、dimens等
-lib.framework : 基本框架库，包括网络请求、缓存、动态代理回调、Utils等。
-app.main : App的主模块
-app.phone : 查询手机号码归属地模块
-app.weather : 查询北京天气模块
-app.shanghai.weather : 查询上海天气模块
-
-写在前面的话
-
 这两年热修复、组件化、插件化很火，火到中国这方面的开源项目遍地开花，例如：屠毅敏的AndroidDynamicLoader、任玉刚的dynamic-load-apk、张勇的DroidPlugin、阿里的AndFix、林光亮的Small等，除了中国这些热修复、插件化的开源项目，你有听过外国的嘛。虽然你可能看过这样的文章《插件化从入门到放弃》，但你是否还看过这样的文章《插件化从放弃到捡起》，尽管应用热修复和插件化坑多、难度高，但我们还是一往情深、纵身向前，因为她的优点远多于她的缺点。
 
 插件化在实际开发中的主要好处有：
@@ -49,7 +35,7 @@ Small的具体使用还请参考GitHub 上 Small 的 Android 应用。
 模块命名如：app.*，lib.*，web.*
 包名命名如：宿主包名.app.*，宿主包名.lib.*，宿主包名.web.*
 因为Small会根据包名对插件进行归类，特殊的域名空间如：“.app.” 会让这变得容易。
-从Small的组件打包源码中(buildSrc/.../PluginType)能看到该框架是对插件进行归类的：
+从Small的组件打包源码中(buildSrc/…/PluginType)能看到该框架是对插件进行归类的：
 
 public enum PluginType {
     Unknown (0),
@@ -102,7 +88,6 @@ Intent intent = new Intent();
 intent.putExtra("result", "XXOO");  
 setResult(requestCode, intent);  
 建议传递 requestCode，将 requestCode 做为 resultCode 返回。  
-
 插件升级策略
 
 测试发现 Small 在前台更新完插件，重新启动 App 新的插件功能才会生效， 如果不重新启动插件而继续使用插件，程序可能会崩掉，可以看出 Small 还不支持热更新。
