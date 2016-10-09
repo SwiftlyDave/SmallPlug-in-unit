@@ -1,0 +1,7 @@
+include ':app',
+        ':lib.style',
+        ':lib.framework',
+        ':app.main',
+        ':app.phone',
+        ':app.weather',
+        ':app.shanghai.weather'

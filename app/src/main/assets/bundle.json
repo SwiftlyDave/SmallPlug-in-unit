@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "bundles": [
+    {
+      "uri": "lib.style",
+      "pkg": "com.sunfusheng.small.lib.style"
+    },
+    {
+      "uri": "lib.framework",
+      "pkg": "com.sunfusheng.small.lib.framework"
+    },
+    {
+      "uri": "main",
+      "pkg": "com.sunfusheng.small.app.main"
+    },
+    {
+      "uri": "weather",
+      "pkg": "com.sunfusheng.small.app.weather"
+    },
+    {
+      "uri": "phone",
+      "pkg": "com.sunfusheng.small.app.phone",
+      "rules": {
+        "Number": ".ui.Number"
+      }
+    }
+  ]
+}
